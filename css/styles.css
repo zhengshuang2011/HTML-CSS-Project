@@ -135,3 +135,21 @@ a {
     padding-left: 0;
   }
 }
+
+/* Icons */
+.icon {
+  width: 50px;
+  height: 50px;
+}
+.icon--primary {
+  fill: var(--color-primary);
+}
+.icon-container {
+  border-radius: 100%;
+  background-color: #f3f9fa;
+  width: 78px;
+  height: 78px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
