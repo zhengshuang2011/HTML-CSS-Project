@@ -292,7 +292,7 @@ a {
   color: white;
 }
 .card--primary .badge--primary {
-  background-color: #3565be;
+  background-color: #126de4;
 }
 .card--secondary .card__header {
   background-color: var(--color-secondary);
@@ -325,6 +325,9 @@ a {
 }
 .plan .list__item {
   margin-bottom: 2rem;
+}
+.plan--popular {
+  transform: scale(1.1);
 }
 .plan--popular .card__header {
   position: relative;
@@ -647,3 +650,22 @@ a {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
 }
+
+/* Plans Block */
+.block-plans .grid {
+  gap: 8rem 4rem;
+}
+.block-plans .card {
+  max-width: 470px;
+  margin: 0 auto;
+}
+.block-plans .card--secondary:hover {
+  transform: scale(1.03);
+  transition: transform 0.2s;
+}
+.block-plans .card--primary:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s;
+}
+
+/*  */
