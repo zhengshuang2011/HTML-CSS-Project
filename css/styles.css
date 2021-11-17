@@ -134,7 +134,7 @@ a {
   /* get rid of the default bullet points */
   list-style: none;
   padding-left: 0;
-  color: var(--color-heading);
+  /* color: var(--color-heading); */
 }
 .list--inline .list__item {
   display: inline-block;
@@ -187,7 +187,7 @@ a {
   font-size: 1.8rem;
   font-weight: 600;
   text-transform: uppercase;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   border-radius: 40px;
   border: 0;
   margin: 1rem 0;
@@ -270,6 +270,7 @@ a {
 .input-group .input {
   border: 0;
   flex-grow: 1;
+  width: 0;
   padding: 1.5rem 4rem;
 }
 .input-group .btn--accent {
@@ -634,9 +635,17 @@ a {
   .hero {
     padding-top: 0;
   }
+  .hero__heading {
+    font-size: 5.5rem;
+  }
   .hero__content {
     text-align: left;
     align-self: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hero__heading {
+    font-size: 7.5rem;
   }
 }
 
@@ -656,6 +665,7 @@ a {
   font-weight: 600;
   max-width: 700px;
   margin: 0 auto;
+  color: var(--color-heading);
 }
 @media screen and (min-width: 768px) {
   .domain .btn {
@@ -668,6 +678,9 @@ a {
 }
 
 /* Plans Block */
+.block-plans {
+  padding-top: 0;
+}
 .block-plans .grid {
   gap: 8rem 4rem;
 }
