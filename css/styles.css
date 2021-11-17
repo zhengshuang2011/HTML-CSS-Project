@@ -547,7 +547,7 @@ a {
   margin-top: 0;
 }
 .block--dark {
-  background-color: black;
+  background-color: rgb(20, 19, 19);
   color: #7b858b;
 }
 .block--dark h1,
@@ -743,4 +743,65 @@ a {
 /* Testimonial Block */
 .testimonial-block__p {
   font-size: 2rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #232323;
+}
+.footer__section {
+  border-bottom: 1px solid #393939;
+  margin-top: 3rem;
+}
+.footer__heading {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 550;
+  margin-bottom: 2rem;
+}
+.footer__content .list__item {
+  color: #777;
+  font-size: 2.1rem;
+  transition: color 0.3s;
+}
+.footer__content .list__item:hover {
+  color: white;
+}
+.footer__brand {
+  margin-top: 5rem;
+}
+.footer__copyright {
+  color: white;
+  opacity: 0.3;
+  font-size: 2.1rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__sections {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+  .footer__section {
+    border: 0;
+  }
+  .footer .collapsible__toggler {
+    display: none;
+  }
+  .footer__heading {
+    font-size: 2.1rem;
+  }
+  .footer__content {
+    max-height: 100%;
+    opacity: 1;
+  }
+  .footer__brand {
+    order: -1;
+    margin-top: 2rem;
+    padding-right: 4rem;
+    font-size: 1.5rem;
+  }
+  /* TODO: Consider refactoring this and applying it to all images. */
+  .footer__brand > img {
+    width: 100%;
+    max-width: 230px;
+    min-width: 150px;
+  }
 }
